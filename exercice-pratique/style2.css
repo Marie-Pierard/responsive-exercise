@@ -1,0 +1,45 @@
+body {
+    background-color: red;
+    display: flex;
+  }
+  /*for mobile phones*/
+  @media only screen and (max-width: 500px) {
+ body{
+   display: flex;
+   flex-direction: column;
+ }
+}
+  @media only screen and (min-width: 501px) and (max-width: 767px) {
+    body {
+      background-color: green;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    #small{
+      width: 40%;
+    }
+    #medium{
+      width: 35%;
+    }
+    #large{
+      width:25%;
+    }
+  }
+      
+  @media only screen and (min-width: 768px) {
+    body {
+      background-color: blue;
+    }
+    
+    #small{
+      width: 33%;
+    }
+    #medium{
+      width: 33%;
+    }
+    #large{
+      width:33%;
+    }
+  }
+   
